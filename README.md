@@ -1,11 +1,13 @@
 # Changes from original
 
-1. Added support for timers
+Use `advanced-telegram-bot-lua` in require instead of `telegram-bot-lua`
+
+1. Added support for timers (`examples/timer.lua`)
 2. Currently nothing (if I need something additional, I'll add it in this version of telegram bot)
 
 # How to install (that's a bit different version from original one)
 
-Currently it's available only for local install, not from luarocks. It will be changed in future when library will have enough changes to be a separate module
+Currently it's available only for local install (download it and type `luarocks make` to use), not from luarocks servers. It will be changed in future when library will have enough changes to be a separate module
 
 # Readme from original repository: 
 
