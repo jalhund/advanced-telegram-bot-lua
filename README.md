@@ -1,3 +1,16 @@
+# Changes from original
+
+1. Added support for timers
+2. Currently nothing (if I need something additional, I'll add it in this version of telegram bot)
+
+# How to install (that's a bit different version from original one)
+
+
+
+# Readme from original repository: 
+
+Original repository: https://github.com/wrxck/telegram-bot-lua
+
 # telegram-bot-lua
 
 A feature-filled Telegram bot API library written in Lua, created by [Matt](https://t.me/wrxck). This library includes functions that allow you to use any Telegram bot API method. It is frequently updated and also includes extensive tools to reduce the amount of code needed to perform more elaborate and complex actions.
