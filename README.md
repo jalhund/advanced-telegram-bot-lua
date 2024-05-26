@@ -5,7 +5,7 @@
 
 # How to install (that's a bit different version from original one)
 
-
+Currently it's available only for local install, not from luarocks. It will be changed in future when library will have enough changes to be a separate module
 
 # Readme from original repository: 
 
