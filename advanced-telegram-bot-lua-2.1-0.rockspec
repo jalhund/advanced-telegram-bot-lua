@@ -11,7 +11,7 @@ description = {
     summary = "Advanced version of Lua library for the Telegram bot API. Based on: https://github.com/wrxck/telegram-bot-lua",
     detailed = "A simple yet extensive Lua library for the Telegram bot API, with many tools and API-friendly functions.",
     license = "GPL-3",
-    homepage = "https://github.com/jalhund/advanced-telegram-bot-lua,
+    homepage = "https://github.com/jalhund/advanced-telegram-bot-lua",
     maintainer = "Denis Makhortov <denismakhortovdev@gmail.com>"
 }
 

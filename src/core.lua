@@ -1773,7 +1773,7 @@ function api.process_update(update)
     return false
 end
 
-function api.run(limit, timeout, offset, allowed_updates, use_beta_endpoint)
+function api.run(limit, timeout, offset, allowed_updates, use_beta_endpoint, callback_for_each_iteration)
     limit = tonumber(limit) ~= nil and limit or 1
     timeout = tonumber(timeout) ~= nil and timeout or 0
     offset = tonumber(offset) ~= nil and offset or 0
@@ -1784,6 +1784,10 @@ function api.run(limit, timeout, offset, allowed_updates, use_beta_endpoint)
                 api.process_update(v)
                 offset = v.update_id + 1
             end
+        end
+
+        if callback_for_each_iteration then
+            callback_for_each_iteration()
         end
     end
 end
