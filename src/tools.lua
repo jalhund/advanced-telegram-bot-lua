@@ -14,14 +14,14 @@
       See LICENSE for details
 
 ]] local tools = {}
-local api = require('telegram-bot-lua.core')
+local api = require('advanced-telegram-bot-lua.core')
 local https = require('ssl.https')
 local http = require('socket.http')
 local socket = require('socket')
 local ltn12 = require('ltn12')
 local json = require('dkjson')
 local utf8 = utf8 or require('lua-utf8') -- Lua 5.2 compatibility.
-local b64url = require('telegram-bot-lua.b64url')
+local b64url = require('advanced-telegram-bot-lua.b64url')
 
 function tools.comma_value(amount)
     amount = tostring(amount)

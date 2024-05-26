@@ -19,7 +19,7 @@ local multipart = require('multipart-post')
 local ltn12 = require('ltn12')
 local json = require('dkjson')
 local html = require('htmlEntities')
-local config = require('telegram-bot-lua.config')
+local config = require('advanced-telegram-bot-lua.config')
 
 function api.configure(token, debug)
     if not token or type(token) ~= 'string' then

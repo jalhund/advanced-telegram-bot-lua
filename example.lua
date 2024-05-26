@@ -3,7 +3,7 @@
     which tells the user the JSON for the callback_query.from object.
 ]]
 
-local api = require('telegram-bot-lua.core').configure('') -- Enter your token
+local api = require('advanced-telegram-bot-lua.core').configure('') -- Enter your token
 local json = require('dkjson')
 
 function api.on_message(message)

@@ -1,7 +1,7 @@
 local ipsw = {} -- todo: update api to v4
 
-local api = require('telegram-bot-lua.core').configure('') -- Insert your token here.
-local tools = require('telegram-bot-lua.tools')
+local api = require('advanced-telegram-bot-lua.core').configure('') -- Insert your token here.
+local tools = require('advanced-telegram-bot-lua.tools')
 local https = require('ssl.https')
 local url = require('socket.url')
 local json = require('dkjson')
