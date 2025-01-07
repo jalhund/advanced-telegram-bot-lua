@@ -29,6 +29,7 @@ function api.configure(token, debug)
     api.token = assert(token, 'Please specify your bot API token you received from @BotFather!')
     repeat
         api.info = api.get_me()
+        -- pprint("Api info is: ", api.info)
     until api.info.result
     api.info = api.info.result
     api.info.name = api.info.first_name
@@ -1773,6 +1774,7 @@ function api.process_update(update)
     return false
 end
 
+local isInit_app = false
 function api.run(limit, timeout, offset, allowed_updates, use_beta_endpoint, callback_for_each_iteration)
     limit = tonumber(limit) ~= nil and limit or 1
     timeout = tonumber(timeout) ~= nil and timeout or 0
@@ -1780,9 +1782,11 @@ function api.run(limit, timeout, offset, allowed_updates, use_beta_endpoint, cal
     while true do
         local updates = api.get_updates(timeout, offset, limit, allowed_updates, use_beta_endpoint)
         if updates and type(updates) == 'table' and updates.result then
-            for _, v in pairs(updates.result) do
-                api.process_update(v)
-                offset = v.update_id + 1
+            if isInit_app == false then isInit_app = true else 
+                for _, v in pairs(updates.result) do
+                    api.process_update(v)
+                    offset = v.update_id + 1
+                end
             end
         end
 
